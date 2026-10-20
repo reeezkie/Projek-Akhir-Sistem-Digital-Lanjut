@@ -1,0 +1,16 @@
+vhdl xpm  \
+"D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl xil_defaultlib  \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/Background_Object.vhd" \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/Collision.vhd" \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/Fruit.vhd" \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/Life_Counter.vhd" \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/Player.vhd" \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/Priority_MUX.vhd" \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/VGA_Controller.vhd" \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/poisonous_fruit.vhd" \
+"D:/Semester 3/SISDIGLAN/Catch_the_Apple-main terbaruuw/Catch_the_Apple-main/vga.srcs/sources_1/new/TopModule.vhd" \
+
+# Do not sort compile order
+nosort

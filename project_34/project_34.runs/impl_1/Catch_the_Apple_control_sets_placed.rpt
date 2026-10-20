@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed Nov 19 15:15:48 2025
+| Host         : GoGathZ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Catch_the_Apple_control_sets_placed.rpt
+| Design       : Catch_the_Apple
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    97 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              40 |           26 |
+| No           | No                    | Yes                    |              25 |           11 |
+| No           | Yes                   | No                     |               7 |            3 |
+| Yes          | No                    | No                     |              94 |           39 |
+| Yes          | No                    | Yes                    |              85 |           35 |
+| Yes          | Yes                   | No                     |               4 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |               Enable Signal              |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  VGA_Controller_inst/E[0]     |                                          |                                     |                1 |              2 |         2.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | btnCpuReset_IBUF                         |                                     |                4 |              4 |         1.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | VGA_Controller_inst/f_count_reg[0]_0[0]  | Player_inst/slow_counter[3]_i_1_n_0 |                1 |              4 |         4.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | VGA_Controller_inst/f_count_reg[5]_0[0]  |                                     |                2 |              5 |         2.50 |
+|  clk_wiz_0_inst/inst/clk_out1 | Collision_inst/life0                     | VGA_Controller_inst/reset           |                3 |              6 |         2.00 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                          | Priority_MUX_inst/Col_O[11]_i_1_n_0 |                3 |              7 |         2.33 |
+|  clk_wiz_0_inst/inst/clk_out1 | Fruit_0/fall_cnt[8]_i_1__0_n_0           | VGA_Controller_inst/reset           |                3 |              9 |         3.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Fruit_2/fall_cnt[8]_i_1__2_n_0           | VGA_Controller_inst/reset           |                3 |              9 |         3.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Fruit_1/fall_cnt[8]_i_1__1_n_0           | VGA_Controller_inst/reset           |                4 |              9 |         2.25 |
+|  clk_wiz_0_inst/inst/clk_out1 | poisonous_fruit_inst/fall_cnt[9]_i_1_n_0 | VGA_Controller_inst/reset           |                5 |             10 |         2.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | VGA_Controller_inst/f_count              | VGA_Controller_inst/reset           |                3 |             10 |         3.33 |
+|  clk_wiz_0_inst/inst/clk_out1 | Player_inst/s_position[9]_i_1_n_0        | VGA_Controller_inst/reset           |                5 |             10 |         2.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | VGA_Controller_inst/f_count_reg[5]_1[0]  |                                     |                6 |             15 |         2.50 |
+|  clk_wiz_0_inst/inst/clk_out1 | Fruit_0/rand_vec0                        |                                     |                8 |             17 |         2.12 |
+|  clk_wiz_0_inst/inst/clk_out1 | Fruit_2/rand_vec[11]_i_1__2_n_0          |                                     |                6 |             17 |         2.83 |
+|  clk_wiz_0_inst/inst/clk_out1 | poisonous_fruit_inst/rand_vec0           |                                     |                8 |             17 |         2.12 |
+|  clk_wiz_0_inst/inst/clk_out1 | Fruit_1/rand_vec[11]_i_1__1_n_0          |                                     |                5 |             19 |         3.80 |
+|  clk_wiz_0_inst/inst/clk_out1 | VGA_Controller_inst/v_count[9]_i_1_n_0   | VGA_Controller_inst/reset           |                9 |             22 |         2.44 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                          | VGA_Controller_inst/reset           |               11 |             25 |         2.27 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                          |                                     |               25 |             38 |         1.52 |
++-------------------------------+------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+
+
